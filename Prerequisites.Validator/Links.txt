@@ -1,0 +1,2 @@
+﻿How to determine the version and edition of SQL Server and its components
+http://support.microsoft.com/kb/321185
