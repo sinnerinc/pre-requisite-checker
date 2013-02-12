@@ -8,8 +8,11 @@
 
     public class SqlServerValidator
     {
-        public bool SqlServerVersionExists(string version)
+        public bool SqlServerVersionExists(string versionStartsWith)
         {
+            if (string.IsNullOrWhiteSpace(versionStartsWith))
+                return false;
+
             RegistryKey baseKey = RegistryKey.OpenBaseKey(Microsoft.Win32.RegistryHive.LocalMachine, RegistryView.Registry64);
             RegistryKey rk = baseKey.OpenSubKey(@"SOFTWARE\Microsoft\Microsoft SQL Server\Instance Names\SQL");
             if (rk == null)
@@ -33,7 +36,7 @@
                 }
 
                 string instanceVersion =  (string)instanceRegKey.GetValue("CurrentVersion");
-                if (version == instanceVersion)
+                if (instanceVersion.StartsWith(versionStartsWith))
                 {
                     return true;
                 }

@@ -1,2 +1,19 @@
-﻿How to determine the version and edition of SQL Server and its components
+﻿
+SQL Server 2008
+How to determine the version and edition of SQL Server and its components
 http://support.microsoft.com/kb/321185
+
+MSDTC
+http://blogs.msdn.com/b/madhuponduru/archive/2006/04/17/577898.aspx
+
+Java
+http://stackoverflow.com/questions/1855937/how-to-detect-whether-java-runtime-is-installed-or-not-on-a-computer-using-c-sha
+http://docs.oracle.com/javase/1.4.2/docs/guide/plugin/developer_guide/version.html#jre-jdk
+
+MSMQ
+http://blogs.msdn.com/b/johnbreakwell/archive/2008/05/14/how-to-tell-if-msmq-is-installed.aspx
+
+IIS
+http://www.codeproject.com/Articles/18301/Using-Managed-Code-to-Detect-if-IIS-is-Installed-a
+
+
