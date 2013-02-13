@@ -35,7 +35,7 @@
                     continue;
                 }
 
-                string instanceVersion =  (string)instanceRegKey.GetValue("CurrentVersion");
+                string instanceVersion =  (string)instanceRegKey.GetValue("CurrentVersion", "0.0.0.0");
                 if (instanceVersion.StartsWith(versionStartsWith))
                 {
                     return true;

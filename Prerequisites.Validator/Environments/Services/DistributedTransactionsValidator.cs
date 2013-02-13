@@ -18,16 +18,16 @@
                 return false;
             }
 
-            // bool domainControllerState = ((int)rk.GetValue("DomainControllerState")).IntToBool();
-            bool networkDtcAccess = ((int)rk.GetValue("NetworkDtcAccess")).IntToBool();
-            bool networkDtcAccessAdmin = ((int)rk.GetValue("NetworkDtcAccessAdmin")).IntToBool();
-            bool networkDtcAccessClients = ((int)rk.GetValue("NetworkDtcAccessClients")).IntToBool();
-            bool networkDtcAccessInbound = ((int)rk.GetValue("NetworkDtcAccessInbound")).IntToBool();
-            bool networkDtcAccessOutbound = ((int)rk.GetValue("NetworkDtcAccessOutbound")).IntToBool();
-            // bool networkDtcAccessTip = ((int)rk.GetValue("NetworkDtcAccessTip")).IntToBool();
-            bool networkDtcAccessTransactions = ((int)rk.GetValue("NetworkDtcAccessTransactions")).IntToBool();
-            bool xaTransactions = ((int)rk.GetValue("XaTransactions")).IntToBool();
-            bool luTransactions = ((int)rk.GetValue("LuTransactions")).IntToBool();
+            // bool domainControllerState = ((int)rk.GetValue("DomainControllerState", 0)).IntToBool();
+            bool networkDtcAccess = ((int)rk.GetValue("NetworkDtcAccess", 0)).IntToBool();
+            bool networkDtcAccessAdmin = ((int)rk.GetValue("NetworkDtcAccessAdmin", 0)).IntToBool();
+            bool networkDtcAccessClients = ((int)rk.GetValue("NetworkDtcAccessClients", 0)).IntToBool();
+            bool networkDtcAccessInbound = ((int)rk.GetValue("NetworkDtcAccessInbound", 0)).IntToBool();
+            bool networkDtcAccessOutbound = ((int)rk.GetValue("NetworkDtcAccessOutbound", 0)).IntToBool();
+            // bool networkDtcAccessTip = ((int)rk.GetValue("NetworkDtcAccessTip", 0)).IntToBool();
+            bool networkDtcAccessTransactions = ((int)rk.GetValue("NetworkDtcAccessTransactions", 0)).IntToBool();
+            bool xaTransactions = ((int)rk.GetValue("XaTransactions", 0)).IntToBool();
+            bool luTransactions = ((int)rk.GetValue("LuTransactions", 0)).IntToBool();
 
             return networkDtcAccess &&
                 networkDtcAccessAdmin &&

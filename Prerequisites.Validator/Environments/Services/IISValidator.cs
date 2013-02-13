@@ -1,20 +1,16 @@
-﻿// -----------------------------------------------------------------------
-// <copyright file="IISValidator.cs" company="">
-// TODO: Update copyright text.
-// </copyright>
-// -----------------------------------------------------------------------
-
-namespace Prerequisites.Validator.Environments.Services
+﻿namespace Prerequisites.Validator.Environments.Services
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
+    using Microsoft.Win32;
 
-    /// <summary>
-    /// TODO: Update summary.
-    /// </summary>
     public class IISValidator
     {
+        public bool IsInstalled()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

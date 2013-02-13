@@ -47,6 +47,8 @@
   <ItemGroup>
     <Compile Include="Environments\DotNet\AspNetMVC3Validator.cs" />
     <Compile Include="Environments\DotNet\DotNet35Validator.cs" />
+    <Compile Include="Environments\JavaRuntime\Java17RuntimeValidator.cs" />
+    <Compile Include="Environments\JavaRuntime\JavaRuntimeValidator.cs" />
     <Compile Include="Environments\Services\DistributedTransactionsValidator.cs" />
     <Compile Include="Environments\Services\IISValidator.cs" />
     <Compile Include="Environments\Services\MessageQueuingValidator.cs" />
@@ -63,9 +65,7 @@
   <ItemGroup>
     <Content Include="Links.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Environments\JavaRuntime\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
