@@ -10,7 +10,7 @@ Java
 http://stackoverflow.com/questions/1855937/how-to-detect-whether-java-runtime-is-installed-or-not-on-a-computer-using-c-sha
 http://docs.oracle.com/javase/1.4.2/docs/guide/plugin/developer_guide/version.html#jre-jdk
 
-MSMQ
+MSM
 http://blogs.msdn.com/b/johnbreakwell/archive/2008/05/14/how-to-tell-if-msmq-is-installed.aspx
 
 IIS

@@ -5,6 +5,7 @@ using System.Text;
 using Microsoft.Win32;
 using Prerequisites.Validator.Products.SqlServer;
 using Prerequisites.Validator.Environments.DotNet;
+using Prerequisites.Validator.Environments.Services;
 
 namespace Prerequisites.Validator
 {
@@ -13,8 +14,17 @@ namespace Prerequisites.Validator
         static void Main(string[] args)
         {
             //FindSqlServerR2();
-            FindSqlServerR2Any();
+            //FindSqlServerR2Any();
             //CheckAspNetMvc3();
+            //CheckMsdtcInstalled();
+        }
+
+        private static void CheckMsdtcInstalled()
+        {
+            var validator = new DistributedTransactionsValidator();
+            var isInstalled = validator.IsInstalled();
+
+            Console.WriteLine("MSDTC Installed: " + isInstalled);
         }
 
         private static void FindSqlServerR2Any()
